@@ -1,0 +1,93 @@
+/* Project Section Style Start */
+#projects {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    height: auto;
+    width: 100%;
+    background: rgb(194, 235, 170);
+    box-shadow: 0 0 10px 10px rgb(194, 235, 170);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  #projects a {
+    text-decoration: none;
+  }
+  
+  .project-tile {
+    width: auto;
+    height: 200px;
+    background: rgba(0, 0, 255, 0.452);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    box-shadow: 5px 5px 2px 0 silver;
+    color: white;
+  
+    transition: all 500ms ease-in-out; /* Make un-hover animation smooth*/
+  }
+  
+  .project-tile:hover {
+    transform: translate(-10px, -10px);
+    background: rgb(155, 112, 48);
+    box-shadow: 20px 20px 2px 0 rgba(200, 202, 199, 0.5);
+    transition: all 500ms ease-in-out;
+  }
+  /* Project Section Style End */
+
+  /*Project Tiles Format Start   -  Placeholder - Change*/
+.project-thumbnails {
+    height: 80%;
+    width: 100%;
+    text-align: center;
+    line-height: 20vh;
+    font-weight: bold;
+    color: black;
+  }
+  
+  #project_1 {
+    /*Palindrome Checker*/
+    background: url(../../../img/fcc_jsCert/palindrome.png);
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  
+  #project_2 {
+    /*Roman Numeral Converter*/
+    background: url(../../../img/fcc_jsCert/RomanConverter.png);
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  
+  #project_3 {
+    /*Caesars Cipher*/
+    background: url(../../../img/fcc_jsCert/CaesarCipher.png);
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  
+  #project_4 {
+    /*Telephone Number Validator*/
+    background: url(../../../img/fcc_jsCert/numCheck.png);
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  #project_5 {
+    /*Cash Register*/
+    background: url(../../../img/fcc_jsCert/cashRegister.png);
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  /*Project Tiles Format End*/

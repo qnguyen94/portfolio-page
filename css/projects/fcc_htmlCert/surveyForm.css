@@ -1,0 +1,102 @@
+:root{
+    /*Background variable*/
+    --bgUrl: url(../../../img/fcc_htmlCert/bg.jpg);
+    --bgFallback: repeating-linear-gradient(to left bottom, lightblue, lightgreen);
+/*Background variable*/
+}
+body {
+    background-image: var(--bgUrl, --bgFallback);
+}
+
+#title {
+    text-align: center; 
+    margin: 0% 20% 1% 20%;
+    background-color: rgb(112, 116, 153);
+    border-radius: 20px;
+    border-style: groove;
+    color: rgb(229, 255, 0);
+    box-shadow: 2px 1.5px 1px 1px rgba(0, 140, 255, 0.253);
+    z-index: 1;
+}
+
+main {
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0% 5% 5% 5%;
+    background-image: linear-gradient(350deg,  rgba(196,214,252,0.98), rgba(187,187,187,1));
+    border-radius: 5%;
+    padding: 0.1% 1% 0.1% 1%;
+    box-shadow: 2px 1.5px 1px 1px rgba(0, 140, 255, 0.253)
+}
+
+textarea {width: 95%; resize: none}
+.required {color: red;}
+
+/*Survey form grid start*/
+#survey-form{
+    padding: 0% 2% 2% 2%;
+    margin-top: -1%;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+    "desc desc desc"
+    "name-area mail-area age-area"
+    "os-area os-area os-area"
+    "role activity activity"
+    "cmt cmt cmt"
+    "submit submit submit";
+}
+
+#desc-div {
+    grid-area: desc;
+    font-size: 1.5em;
+    width: 100%;
+    font-weight: bolder;
+    align-self: baseline;
+    justify-self: center;
+    text-align: center;
+}
+
+#name-div {grid-area: name-area;}
+#email-div {grid-area: mail-area;}
+#age-div {grid-area: age-area;}
+#drop-div {grid-area: os-area; width:100%; align-self:baseline; justify-self: center;}
+#role-set {grid-area: role;}
+#activity-set{grid-area: activity;}
+#cmt-div {grid-area: cmt; align-self: baseline; justify-self: center; width: 100%;}
+
+#submit {grid-area:submit; align-self: baseline; 
+    justify-self: center; font-size: 1.5em; border-radius: 25px; padding: 10px;
+    box-shadow: 5px 5px 1px 0px lightsteelblue; background: rgb(230, 194, 34);
+    }
+
+#submit:hover {
+    font-weight: bold;
+    transform:scale(1.1);
+    box-shadow: 7px 7px 1px 0px lightsteelblue; background: rgb(230, 194, 34);
+}
+
+/*Change grid for display below 800px*/
+@media (max-width:800px){
+    #survey-form{
+    padding: 1%;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-areas:
+    "desc"
+    "name-area" 
+    "mail-area"
+    "age-area"
+    "os-area"
+    "role" 
+    "activity"
+    "cmt"
+    "submit";
+    }
+}
+
+/*Survey form grid end*/

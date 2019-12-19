@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>FreeCodeCamp Project: Palindrom Checker</title>
+        <link rel="stylesheet" type="text/css" href="..\..\css\projects\fcc_jsCert\PalindromeChecker.css">
+        <link rel="stylesheet" type="text/css" href="..\..\css\projects\fcc_jsCert\pageColor.css">
+        <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text|Russo+One|Chakra+Petch&display=swap" rel="stylesheet">
+        <script src="..\..\js\fcc_jsCert\PalindromeChecker.js" type='text/javascript'></script>
+    </head>
+    <body>
+        <nav id="navBar">
+            <script type="text/javascript" src="..\..\js\fcc_jsCert\nav\navbar.js"></script>
+        </nav>
+
+        <div id="pagewrap">
+            <div id ="introduction">
+                <p id ="fcc">FreeCodeCamp </br> JavaScript Algorithms and Data Structures Project</p>
+                <p id="p-name">Palindrome Checker</p>
+                <p id ="p-desc">Return <strong style="color:blue">true</strong> if the given string is a <b>palindrome</b>. 
+                    Otherwise, return <strong style="color:red">false</strong>.
+                    A <strong>palindrome</strong> is a word or sentence that's spelled the same way both forward and backward,
+                     ignoring punctuation, case, spacing, and special characters.
+                </p>
+            </div>
+            <div id ="input">
+                <label for="input"><b>Palindrom Check Input:</b></label>
+                <input id="stringToCheck" type="text" placeholder="Enter a string to check" onclick="this.select();">
+                <input type="button" value="Check" onclick='checkStr();'>
+            </div>
+
+            <div id ="output">
+                <p id="response"></p>
+                <p id="pOutput" style="text-align: center">Output Will Appear Here</p>
+            </div>
+
+            <div id="signature">
+                <script type="text/javascript" src="..\..\js\fcc_jsCert\footer\footer.js"></script>
+            </div>
+        </div>
+    </body>
+</html>

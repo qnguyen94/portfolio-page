@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>FreeCodeCamp Project: Roman Numeral Converter</title>
+        <link rel="stylesheet" type="text/css" href="..\..\css\projects\fcc_jsCert\RomanNumeralConverter.css">
+        <link rel="stylesheet" type="text/css" href="..\..\css\projects\fcc_jsCert\pageColor.css">
+        <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text|Russo+One|Chakra+Petch&display=swap" rel="stylesheet">
+        <script src="..\..\js\fcc_jsCert\RomanNumeralConverter.js" type='text/javascript'></script>
+    </head>
+    <body>
+        <nav id="navBar">
+            <script type="text/javascript" src="..\..\js\fcc_jsCert\nav\navbar.js"></script>
+        </nav>
+        
+        <div id="pagewrap">
+            <div id ="introduction">
+                <p id ="fcc">FreeCodeCamp </br> JavaScript Algorithms and Data Structures Project</p>
+                <p id="p-name">Roman Numeral Converter</p>
+                <p id ="p-desc">This program converts a given number into a <b>roman numeral</b> (For example: 1 -> I, 10 -> X).</br>
+                    <b style="color:brown">Limitation</b>: This program cannot convert a number smaller than 1 or larger than 3999.
+                </p>
+            </div>
+            <div id ="input">
+                
+                <input id="stringToCheck" type="text" placeholder="Enter a whole number" onclick="this.select();">
+                <input type="button" value="Check" onclick="convertNumber();">
+            </div>
+
+            <div id ="output">
+                <p id="pOutput" style="text-align: center">Output Will Appear Here</p>
+            </div>
+
+            <div id="signature">
+                <script type="text/javascript" src="..\..\js\fcc_jsCert\footer\footer.js"></script>
+            </div>
+        </div>
+    </body>
+</html>

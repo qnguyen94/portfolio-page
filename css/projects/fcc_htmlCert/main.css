@@ -1,0 +1,87 @@
+html{height: 100vh;}
+body {
+    margin-top: 10%;
+    height: 90%;
+    background: rgb(170, 205, 235);
+    overflow-y:auto;
+}
+
+#pagewrap{
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+#signature {
+    width: 100%;
+    text-align: right;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 0.8em;
+    margin-top: 5px;
+    margin-bottom: 1%;
+}
+
+#navBar {
+    height: 9%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* Push items to right  */
+    align-items: center; /* Push item to bottom. Don't know why. Prevent item overflow top when width decrease*/
+    width: 100%;
+    background: rgb(72, 97, 209);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 15%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+    z-index: 1;
+
+    box-shadow: 0px 2px 2px 4px rgba(228, 241, 107, 0.445);
+}
+
+.navLinks{
+    color: rgb(235, 227, 227);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    transition: all 200ms ease-in-out; /* Make un-hover animation smooth*/
+}
+
+nav ul li:hover a {
+    background: yellowgreen;
+    color: black;
+    transition: all 200ms ease;
+}
+
+/*Prevent navbar overflow on small width*/
+@media only screen and (max-width: 970px){
+    body{ margin-top: 15%;}
+    #navBar{height: 20%;}
+    nav ul li {font-size:0.9em;}
+}
+
+/*Prevent navbar overflow on small width*/
+@media only screen and (max-width: 800px){
+    body{margin-top: 20%;}
+    #navLinks{padding: 5px;}
+    nav ul li {padding:0px;}
+    #navBar{height: 20%;}
+    nav ul li {font-size:0.85em;}
+}

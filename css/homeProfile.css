@@ -1,0 +1,174 @@
+/* Profile Section Style Start */
+#profile {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+    background: rgb(195, 170, 235);
+    box-shadow: 0 0 10px 10px rgb(195, 170, 235);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #profile a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .profile-tile {
+    width: 8vw;
+    height: 8vw;
+    background: rgba(102, 255, 0, 0.521);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+  
+    box-shadow: 0x 0px 5px 5px silver;
+  
+    /* Un-hover animation*/
+    animation-name: profile-unhover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+  }
+  
+  /*Un-hover animation -might overlap with loading animation*/
+  @keyframes profile-unhover {
+    50% {
+      transform: scale(1.025);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .profile-tile:hover {
+    animation-name: profile-hover;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes profile-hover {
+    20% {
+      transform: scale(0.95);
+    }
+    40% {
+      transform: scale(1.1);
+    }
+    60% {
+      transform: scale(1);
+    }
+    80% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1.025);
+    }
+  }
+  
+#profile {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+    background: rgb(195, 170, 235);
+    box-shadow: 0 0 10px 10px rgb(195, 170, 235);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #profile a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .profile-tile {
+    width: 8vw;
+    height: 8vw;
+    background: rgba(102, 255, 0, 0.521);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+  
+    box-shadow: 0x 0px 5px 5px silver;
+  
+    /* Un-hover animation*/
+    animation-name: profile-unhover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+  }
+  
+  /*Un-hover animation -m ight overlap with loading animation*/
+  @keyframes profile-unhover {
+    50% {
+      transform: scale(1.025);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .profile-tile:hover {
+    animation-name: profile-hover;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes profile-hover {
+    20% {
+      transform: scale(0.95);
+    }
+    40% {
+      transform: scale(1.1);
+    }
+    60% {
+      transform: scale(1);
+    }
+    80% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1.025);
+    }
+  }
+  
+  /* Profile Section Style End */
+  
+  /*Profile Tiles Format Start*/
+  #linkedin {
+    background: url(https://www.freepnglogos.com/uploads/social-linkedin-box-blue-logo-2.png);
+    background-size: 100% 100%;
+  }
+  
+  #github {
+    background: url(https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png);
+    background-size: 100% 100%;
+    background-position: center center;
+  }
+  
+  #fcc {
+    background: url(https://s3.amazonaws.com/freecodecamp/curriculum-diagram-full.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+  }
+  
+  .profile-link p {
+    text-align: center;
+  }
+  .profile-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Profile Tiles Format End*/

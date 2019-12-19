@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>FCC: Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="../../css/projects/fcc_htmlCert/surveyForm.css">
+        <link rel="stylesheet" type="text/css" href="..\..\css\projects\fcc_htmlCert\main.css">
+    </header>
+    <body>
+        <!-- Navigation Bar -->
+        <nav id="navBar">
+            <script type="text/javascript" src="..\..\js\fcc_htmlCert\nav\navbar.js"></script>
+        </nav>
+        <h1 id="title">Operating System Survey</h1>
+        <main>
+                <form id="survey-form" action="">
+                    <div id="desc-div">
+                        <p id="description">Tell us about you and your computer system</p>
+                        <p style="font-size: 0.7em; font-weight: normal"><font class="required">*</font> is required</p>
+                        <hr>
+                    </div>
+
+                    <!-- Name field-->
+                    <div id="name-div">
+                        <label for="name" id="name-label"><font class="required">*</font>Name: </label>
+                        <input type="text" id="name" name="survey_name" required placeholder="Enter your name">
+                        <hr>
+                    </div>
+
+                    <!-- Email Field-->
+                    <div id="email-div">
+                        <label for="email" id="email-label"><font class="required">*</font>Email:</label>
+                        <input type="email" id="email" name="survey_email" required placeholder="Enter your Email">
+                        <hr>
+                    </div>
+
+                    <!-- Age Field-->
+                    <div id="age-div">
+                        <label for="number" id="number-label" style="width: 30%">Age:</label>
+                        <input type="number" id="number" name="survey_number"
+                         min="18" max="99" placeholder="Enter your age" style="width: 70%">
+                         <hr>
+                    </div>
+
+                    <!-- Dropdown-->
+                    <div id="drop-div">
+                        <label for="dropdown" id="dropdown-label" name="survey-dropdown">
+                                <font class="required">*</font>Which Operating System do you have on your computer?:</label>
+                        <select id="dropdown">
+                                <option value="win">Windows</option>
+                                <option value="mac">Mac</option>
+                                <option value="linux">Linux</option>
+                                <option value="chrome">ChromeOS</option>
+                                <option value="other">Other</option>
+                        </select>
+                        <hr>
+                    </div>
+
+                    <!-- Radio Buttons-->
+                    <fieldset id="role-set">
+                            <legend><font class="required">*</font>Select an option best describe you:</legend>
+                            <input id="student" type="radio" name="rb-1" value="student" required>
+                            <label for="student">Student</label><br>
+                            <input id="educator" type="radio" name="rb-1" value="educator">
+                            <label for="educator">Educator</label><br>
+                            <input id="artist" type="radio" name="rb-1" value="artist">
+                            <label for="artist">Artist</label><br>
+                            <input id="athlete" type="radio" name="rb-1" value="athlete">
+                            <label for="athlete">Athlete</label><br>
+                            <input id="developer" type="radio" name="rb-1" value="developer">
+                            <label for="developer">Developer</label><br>
+                            <input id="other" type="radio" name="rb-1" value="other">
+                            <label for="other">Other (Please specify in the comment)</label>
+                    </fieldset>
+                    
+
+                    <!-- Checkboxes-->
+                    <fieldset id="activity-set">
+                        <legend>Which activities do you mostly do on your computer? (Select all that apply)</legend>
+                        <input id="study" type="checkbox" name="cb-1" value="study">
+                        <label for="study">Study</label><br>
+                        <input id="games" type="checkbox" name="cb-1" value="games">
+                        <label for="games">Play Video Games</label><br>
+                        <input id="work" type="checkbox" name="cb-1" value="work">
+                        <label for="work">Work</label><br>
+                        <input id="browsing" type="checkbox" name="cb-1" value="browsing">
+                        <label for="browsing">Browse the web</label><br>
+                        <input id="movie" type="checkbox" name="cb-1" value="movie">
+                        <label for="movie">Watch Movies</label><br>
+                        <input id="other" type="checkbox" name="cb-1" value="other">
+                        <label for="other">Other (Please specify in the comment)</label>
+                    </fieldset>
+                    
+
+                    <!-- Comment Textarea-->
+                    <div id="cmt-div">
+                        <hr>
+                        <hr>
+                        <label for="comments" id="commments-label">Additional Comments: </label></br>
+                        <textarea id="comments" rows="5"
+                        placeholder="If you chose 'Other' on any of the lists above, please specify."></textarea>
+                    </div>
+       
+                    <!-- Submit Button-->
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

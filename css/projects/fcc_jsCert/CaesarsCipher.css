@@ -1,0 +1,67 @@
+#pagewrap {
+    display: flex;
+    flex-direction: column;
+    align-items: top;    /*Vertical align*/
+    justify-items: center;    /*Horizontal align*/
+}
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+}
+
+    #introduction p {
+        width: 95%;
+        text-align: center;
+        align-self: center;
+    }
+
+    #fcc {
+        font-family: 'DM Serif Text', serif;
+        font-size: 2em;
+    }
+    #p-name{
+        font-family: 'Russo One', sans-serif;
+        font-size: 1.7em;
+    }
+    #p-desc{
+        width: 100%;
+        font-size: 1.1em;
+        width: 100%;
+    }
+
+    
+#input{
+    align-self: center;
+    justify-self: center;
+    font-size: 1em;
+}
+
+#output{
+    align-self: center;
+    justify-self: center;
+    width:70%;
+    background: rgba(142, 161, 131, 0.432);
+    text-align: center;
+    text-justify: center;
+    border-radius: 15px;
+    font-size: 1em;
+}
+
+textarea{
+    resize: none;
+    overflow: auto;
+}
+
+#encryptKey {
+    width: 5em;
+}
+
+#textBox {
+    overflow: auto;
+    resize: none;
+}
+
+#pOutput {
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,144 @@
+/* Project Section Style Start */
+#projects {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+    background: rgb(194, 235, 170);
+    box-shadow: 0 0 10px 10px rgb(194, 235, 170);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  #projects a {
+    text-decoration: none;
+  }
+  
+  .project-tile {
+    width: 20vw;
+    height: 250px;
+    background: rgb(241, 225, 78);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color:black;
+    font-weight: bold;
+  
+    box-shadow: 5px 5px 2px 0 silver;
+    transition: all 500ms ease-in-out; /* Make un-hover animation smooth*/
+  }
+  
+  .project-tile:hover {
+    transform: translate(-10px, -10px);
+    background: rgb(109, 136, 46);
+    box-shadow: 20px 20px 2px 0 rgba(200, 202, 199, 0.5);
+    transition: all 500ms ease-in-out;
+    color: rgb(255, 255, 255);
+  }
+  /* Project Section Style End */
+  
+  /*Project Tiles Format Start*/
+  .project-thumbnails {
+    height: 80%;
+    width: 100%;
+    text-align: center;
+    line-height: 20vh;
+    font-weight: bold;
+    color: black;
+  }
+  
+  #project_1 {
+    /*Tribute page*/
+    background: url(http://drive.google.com/uc?export=view&id=1IJ5pRGV6R2CQ1tSeCNOGRM3vr_V3bxN9);
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  
+  #project_2 {
+    /*Survey page*/
+    background: url(http://drive.google.com/uc?export=view&id=1jiIDqj3xO1ws6qIEbN2XT5eL1Wanvcye);
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  
+  #project_3 {
+    /*Landing page*/
+    background: url(http://drive.google.com/uc?export=view&id=1pS2E4BCp18piA_J4dAQ6sWcfpkN-DMJs);
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  
+  #project_4 {
+    /*Documentation page*/
+    background: url(http://drive.google.com/uc?export=view&id=1WYqpaKidY4JW430d5_QnMa8QsUCxOrx9);
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+
+  /*Project Tiles Format End*/
+  
+  /*Profile Tiles Format Start*/
+  #linkedin {
+    background: url(https://www.freepnglogos.com/uploads/social-linkedin-box-blue-logo-2.png);
+    background-size: 100% 100%;
+  }
+  
+  #github {
+    background: url(https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png);
+    background-size: 100% 100%;
+    background-position: center center;
+  }
+  
+  #fcc {
+    background: url(https://s3.amazonaws.com/freecodecamp/curriculum-diagram-full.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+  }
+  
+  .profile-link p {
+    text-align: center;
+  }
+  .profile-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Profile Tiles Format End*/
+
+/*Project Tiles Format Start*/
+.project-thumbnails {
+    height: 80%;
+    width: 100%;
+    text-align: center;
+    line-height: 20vh;
+    font-weight: bold;
+    color: black;
+  }
+  
+  #project_1 {
+    /*FCC Responsive Webdesign*/
+    background: url(/img/responsiveWebDesign.png);
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  
+  #project_2 {
+    /*FCC JavaScript Algorithms and Data Structures*/
+    background: url(/img/jsAlgorithmAndDataStructures.png);
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  
+ 
+  /*Project Tiles Format End*/

@@ -1,0 +1,349 @@
+html {
+    scroll-behavior: smooth; /* Smooth scrolling effect on in page anchor */
+  }
+  
+  .title {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Spectral", serif;
+  }
+  
+  /*Fix navbar overlap contents*/
+  .anchor {
+    padding-top: 15vh;
+    margin-top: -15vh;
+    z-index: -1;
+    visibility: hidden;
+  }
+  
+  /*Nav bar style Start*/
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 15vh;
+    /* background-image: linear-gradient(
+      83deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(7, 50, 98, 1) 32%,
+      rgba(9, 121, 118, 1) 74%,
+      rgba(0, 181, 255, 1) 100%
+    ); */
+
+    background: rgb(72, 97, 209);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+    z-index: 1;
+  }
+  
+  nav #logo {
+    justify-self: flex-start;
+    width: 30%;
+    margin-left: 0.5vw;
+    color: yellow;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    padding: 20px;
+    transition: all 200ms ease-in-out; /* Make un-hover animation smooth*/
+    display: inline-block;
+  }
+  
+  .nav-wheel {
+    font-size: 1.1em;
+    color: orange;
+    font-weight: bold;
+  }
+  
+  nav ul li:hover {
+    font-size: 1.2em;
+    transition: all 200ms ease;
+  }
+  
+  #nav-link {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+  /*Nav bar style End*/
+  
+  /*Welcome Section Style Start */
+  #welcome-section {
+    height: 100vh; /*Make section 100% view port*/
+    background: rgb(170, 205, 235);
+    margin-top: 15vh;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px 10px rgb(170, 205, 235);
+    z-index: 0;
+  }
+  
+  /*Welcome Section Style End */
+  
+  /* Deactivate anchor scrolling for motion sickness people*/
+  /*Reference: https://gomakethings.com/smooth-scrolling-links-with-only-css/*/
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  
+  /* Welcome Section Format Start*/
+  #hello {
+    width: 100%;
+    text-align: center;
+    margin-top: 2vh;
+  }
+  #welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  #wc_role,
+  #wc_self_desc {
+    font-size: 1.1em;
+    font-family: "Titillium Web", sans-serif;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  #wc_hello {
+    font-family: "Knewave", cursive;
+    font-weight: lighter;
+    font-size: 2em;
+  }
+  #wc_thanks {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+  }
+  #wc_name {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  /*Welcome divs delay appearance*/
+  #wc_hello {
+    opacity: 0;
+    animation: 1.3s ease-in-out 0ms 1 welcomeLoad forwards; /*name timing-function delay iteration name fill-mode*/
+  }
+  #wc_thanks {
+    opacity: 0;
+    animation: 1.3s ease-in-out 50ms 1 welcomeLoad forwards; /*name timing-function delay iteration name fill-mode*/
+  }
+  #wc_name {
+    opacity: 0;
+    animation: 1.3s ease-in-out 150ms 1 welcomeLoad forwards; /*name timing-function delay iteration name fill-mode*/
+  }
+  #wc_role {
+    opacity: 0;
+    animation: 1.3s ease-in-out 200ms 1 welcomeLoad forwards; /*name timing-function delay iteration name fill-mode*/
+  }
+  #wc_self_desc {
+    opacity: 0;
+    animation: 1.3s ease-in-out 250ms 1 welcomeLoad forwards; /*name timing-function delay iteration name fill-mode*/
+  }
+  
+  @keyframes welcomeLoad {
+    0% {
+      opacity: 0;
+      transform: translateY(10vw);
+    }
+    100% {
+      opacity: 1;
+      transform: translatex(0);
+    }
+  }
+  /* Welcome Section Format End*/
+  
+  @media only screen and (max-width: 800px) {
+    /*For smaller displays*/
+    #nav-link li {
+      margin: 5px;
+      padding: 5px;
+    }
+  
+    nav ul li:hover {
+      font-size: 1em;
+      box-shadow: 1px 1px 2px 2px silver;
+      transition: all 200ms ease-in-out;
+    }
+  
+    .project-tile {
+      width: 50vw;
+    }
+  
+    .profile-link {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  html {
+    scroll-behavior: smooth; /* Smooth scrolling effect on in page anchor */
+  }
+  
+  .title {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Spectral", serif;
+  }
+  
+  /*Fix navbar overlap contents*/
+  .anchor {
+    padding-top: 15vh;
+    margin-top: -15vh;
+    z-index: -1;
+    visibility: hidden;
+  }
+  
+  /*Welcome Section Style Start */
+  #welcome-section {
+    height: 100vh; /*Make section 100% view port*/
+    background: rgb(170, 205, 235);
+    margin-top: 15vh;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px 10px rgb(170, 205, 235);
+    z-index: 0;
+  }
+  
+  /*Welcome Section Style End */
+  
+  /* Deactivate anchor scrolling for motion sickness people*/
+  /*Reference: https://gomakethings.com/smooth-scrolling-links-with-only-css/*/
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  
+  /* Welcome Section Format Start*/
+  #hello {
+    width: 100%;
+    text-align: center;
+    margin-top: 2vh;
+  }
+  #welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  #wc_role,
+  #wc_self_desc {
+    font-size: 1.1em;
+    font-family: "Titillium Web", sans-serif;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  #wc_hello {
+    font-family: "Knewave", cursive;
+    font-weight: lighter;
+    font-size: 2em;
+  }
+  #wc_thanks {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+  }
+  #wc_name {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  /*Welcome divs delay appearance*/
+  #wc_hello {
+    opacity: 0;
+    animation: 1.3s ease-in-out 0ms 1 welcomeLoad forwards; /*name timing-function delay iteration name fill-mode*/
+  }
+  #wc_thanks {
+    opacity: 0;
+    animation: 1.3s ease-in-out 50ms 1 welcomeLoad forwards; /*name timing-function delay iteration name fill-mode*/
+  }
+  #wc_name {
+    opacity: 0;
+    animation: 1.3s ease-in-out 150ms 1 welcomeLoad forwards; /*name timing-function delay iteration name fill-mode*/
+  }
+  #wc_role {
+    opacity: 0;
+    animation: 1.3s ease-in-out 200ms 1 welcomeLoad forwards; /*name timing-function delay iteration name fill-mode*/
+  }
+  #wc_self_desc {
+    opacity: 0;
+    animation: 1.3s ease-in-out 250ms 1 welcomeLoad forwards; /*name timing-function delay iteration name fill-mode*/
+  }
+  
+  @keyframes welcomeLoad {
+    0% {
+      opacity: 0;
+      transform: translateY(10vw);
+    }
+    100% {
+      opacity: 1;
+      transform: translatex(0);
+    }
+  }
+  /* Welcome Section Format End*/
+  
+  @media only screen and (max-width: 800px) {
+    /*For smaller displays*/
+    #nav-link li {
+      margin: 5px;
+      padding: 5px;
+    }
+  
+    nav ul li:hover {
+      font-size: 1em;
+      box-shadow: 1px 1px 2px 2px silver;
+      transition: all 200ms ease-in-out;
+    }
+  
+    .project-tile {
+      width: 50vw;
+    }
+  
+    .profile-link {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  @media only screen and (max-height: 350px){
+    #hello, #welcome-section, #wc_role,
+    #wc_self_desc, #wc_hello , #wc_thanks,
+    #wc_name {
+      font-size: 1em;
+    }
+
+    #nav-link li {
+      font-size: 1em;
+      margin: 1px;
+      padding: 1px;
+    }
+  }

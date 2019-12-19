@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FCC Product Landing Page</title>
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hammersmith+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="../../css/projects/fcc_htmlCert/productLandingPage.css">
+        <link rel="stylesheet" type="text/css" href="..\..\css\projects\fcc_htmlCert\main.css">
+    </head>
+    <header id="header">
+        <!--Company Logo-->
+        <div id="logo">
+            <a href="#">
+                <img id="header-img" src="https://www.pinclipart.com/picdir/big/76-765453_lemon-png-free-images-toppng-transparent-background-lemon.png">
+            </a>
+            <div id="title">Imaginary Lemon Co.</div>
+        </div>
+        <!-- Nav Bar-->
+        <div id="naV">
+            <nav class="navbar" id="nav-bar">
+                <!-- At least three clickable links-->
+                <ul>
+                    <li><a class="nav-link" href="#top_title">Why Lemon?</a></li>
+                    <li><a class="nav-link" href="#feature_title">Guarantees</a></li>
+                    <li><a class="nav-link" href="#product_title">Our Products</a></li>
+                    <li><a class="nav-link" href="#buy_title">Buy From Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <body>
+        <nav id="navBar">
+            <script type="text/javascript" src="..\..\js\fcc_htmlCert\nav\navbar.js"></script>
+        </nav>
+        <!--Footer-->
+        <div id="signature">
+            <script type="text/javascript" src="..\..\js\fcc_jsCert\footer\footer.js"></script>
+        </div>
+        <div class="main" id="main">
+            <!-- Form for email collection-->
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <label for="email">Subscribe to our Lemon Newsletter:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <input type="submit" id="submit">
+            </form>
+            
+            <!-- Video -->
+            
+            <div class="titles anchor" id="top_title">
+                Why Lemon?
+            </div>
+            <div id="vid">
+                <iframe id="video" width="100%" height="315" 
+                    src="https://www.youtube.com/embed/7vxROgUOf88" 
+                    frameborder="1" allow="accelerometer; autoplay; 
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <!-- Features Grid-->
+            <div class="titles anchor" id="feature_title">
+                Guarantees
+            </div>
+            <div id="features"> 
+                <div class="feature_block">
+                    <div class="feature_type">Organic</div>
+                    <div class="feature_desc">
+                        Lorem ipsum aliquam pulvinar mattis curae nam ligula, 
+                        malesuada egestas duis taciti purus conubia felis sollicitudin, 
+                        non hac habitant pulvinar eros augue.
+                    </div>
+                </div>
+                <div class="feature_block">
+                    <div class="feature_type">Fresh</div>
+                    <div class="feature_desc">
+                        Aenean augue ut scelerisque posuere elit aenean faucibus 
+                        blandit, ut euismod orci primis ornare varius posuere, 
+                        fermentum cubilia feugiat ullamcorper nam platea felis.
+                    </div>
+                </div>
+                <div class="feature_block">
+                    <div class="feature_type">Locally Grown</div>
+                    <div class="feature_desc">
+                        Orci urna leo risus quam elit euismod etiam, 
+                        taciti urna litora auctor ad dictum suspendisse, 
+                        mattis dictumst duis urna quisque habitasse.
+                    </div>
+                </div>
+                <div class="feature_block">
+                    <div class="feature_type">High Quality</div>
+                    <div class="feature_desc">
+                            Sollicitudin aenean proin a litora facilisis 
+                            ultricies elit scelerisque curabitur, 
+                            inceptos ultricies interdum fermentum 
+                            senectus ut vulputate elit, bibendum ad 
+                            luctus id integer sollicitudin vitae iaculis dui id non maecenas 
+                            odio ante orci felis diam.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="titles anchor" id="product_title">
+                Our Products
+            </div>
+            
+            <div id="products">
+                <div class="product_block">
+                    <div class="product_name">Yellow Lemon</div>
+                    <div class="product_img">
+                            <img  alt="yellow lemon picture" src="../../img/fcc_htmlCert/yellowLemon.png">
+                    </div>
+                    <div class="product_desc">
+                            Lorem ipsum libero in egestas nullam leo molestie massa etiam, 
+                            venenatis fringilla accumsan dictum potenti eget diam hendrerit, 
+                            pharetra pretium consectetur donec at duis etiam gravida.
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_name">Lime? No. It's Green Lemon!</div>
+                    <div class="product_img">
+                        <img alt="green lemon picture" src="../../img/fcc_htmlCert/greenLemon.png">
+                    </div>
+                    <div class="product_desc">
+                            Cubilia eros elementum fusce netus pretium erat suspendisse pulvinar 
+                            tristique donec elit, nibh aenean pretium aptent etiam feugiat quisque 
+                            proin mauris arcu.
+                    </div>
+                </div>
+            </div>
+
+           <!-- Buy Grid-->
+            <div class="titles anchor" id="buy_title">
+                Buy From Us
+            </div>
+            
+            <div id="buy">
+                <div class="buy_block">
+                    <div class="buy_name">One time purchase</div>
+                    <div class="buy_img">
+                        <img alt="one_time_purchase_image" src="../../img/fcc_htmlCert/onetime.png">
+                    </div>
+                    <div class="buy_desc">25 Mars Dollar / Pound</div>
+                    <a class="buy_btn" href=""><div>Learn More</div></a>
+                </div>
+                <div class="buy_block">
+                    <div class="buy_name">Subscribe</div>
+                    <div class="buy_img">
+                        <img alt="subscribe_purchase_image" src="../../img/fcc_htmlCert/subcribe.png">
+                    </div>
+                    <div class="buy_desc">Up to 30% discount</div>  
+                    <a class="buy_btn" href=""><div>Learn More</div></a>
+                </div>
+                <div class="buy_block">
+                    <div class="buy_name">Supply contract</div>
+                    <div class="buy_img">
+                        <img alt="supply_contract_image" src="../../img/fcc_htmlCert/supply.png">
+                    </div>
+                    <div class="buy_desc">Order whenever you run out</div>
+                    <a class="buy_btn" href=""><div>Learn More</div></a>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    <footer>
+        <div><a href="">Legal</a>  
+            <a href="">Terms</a>  
+            <a href="">Contact</a></div> 
+        <div>Imaginary Lemon Company &#169; 20XX</div>
+    </footer>
+</html>

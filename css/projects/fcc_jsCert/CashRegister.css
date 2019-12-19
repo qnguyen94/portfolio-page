@@ -1,0 +1,143 @@
+#pagewrap {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: 
+        "title title"
+        "ins ins"
+        "trans  reg"
+        "btn btn"
+        "out out"
+        "sig sig";
+    flex-direction: column;
+    align-items: top;    /*Vertical align*/
+    justify-items: center;    /*Horizontal align*/
+}
+
+#instruction {
+    grid-area: ins;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#introduction {
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+}
+
+    #introduction p {
+        width: 100%;
+        text-align: center;
+        align-self: center;
+    }
+
+    #fcc {
+        font-family: 'DM Serif Text', serif;
+        font-size: 2em;
+    }
+    #p-name{
+        font-family: 'Russo One', sans-serif;
+        font-size: 1.7em;
+    }
+
+
+#output{
+    grid-area: out;
+    align-self: center;
+    justify-self: flex-end;
+    width:100%;
+    background: rgba(142, 161, 131, 0.432);
+    text-align: center;
+    text-justify: center;
+    border-radius: 15px;
+    font-size: 1em;
+    margin-top: 2%;
+}
+#input {
+    grid-area: btn;
+    margin-top: 1em;
+    text-align: center;
+    width: 100%;
+}
+    #input input{
+        width: 100%;
+    }
+
+#p-cashRegister{
+    grid-area: reg;
+    width: 100%;
+    height: 100%;
+}
+
+#p-transaction{
+    grid-area: trans;
+    width: 100%;
+    height: 100%;
+    font-size: 1.1em;
+}
+
+#price, #cashPaid{
+    width: 100%;
+}
+
+
+.registerInput{
+    width: 5em;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+#checkoutBtn{
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#newRegister{
+    width: 90%;
+}
+#newRegister input {
+    background: silver;
+    color: black;
+    text-align: center;
+    align-items: center;
+}
+
+table td {
+    padding: 5px;
+}
+
+table tr td label{
+    float: left;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+input{
+    float: right;
+    font-size: 1em;
+}
+
+#contOp {
+    visibility: hidden;
+}
+
+.randomBtn {
+    font-size: 0.8rem;
+    padding: 0.3em;
+    margin: 0.3em;
+    font-weight: bold;
+}
+
+#signature{
+    grid-area: sig;
+}
