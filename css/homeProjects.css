@@ -128,14 +128,14 @@
   
   #project_1 {
     /*FCC Responsive Webdesign*/
-    background: url(/img/responsiveWebDesign.png);
+    background: url(../img/responsiveWebDesign.png);
     background-position: center;
     background-size: 100% 100%;
   }
   
   #project_2 {
     /*FCC JavaScript Algorithms and Data Structures*/
-    background: url(/img/jsAlgorithmAndDataStructures.png);
+    background: url(../img/jsAlgorithmAndDataStructures.png);
     background-position: center;
     background-size: 100% 100%;
   }
