@@ -1,9 +1,9 @@
 let pageList = [
-    ["Home", "./portfolio-page/index.html"],
-    ["Projects Summary", "./portfolio-page/html/fcc_htmlAndCssCert/fcc_html_summary.html"],
+    ["Home", "/portfolio-page/index.html"],
+    ["Projects Summary", "/portfolio-page/html/fcc_htmlAndCssCert/fcc_html_summary.html"],
     ["Tribute Page", "/portfolio-page/html/fcc_htmlAndCssCert/tributePage.html"],
-    ["Survey Form","./portfolio-page/html/fcc_htmlAndCssCert/surveyForm.html"],
-    ["Product Landing Page", "./portfolio-page/html/fcc_htmlAndCssCert/productLandingPage.html"]
+    ["Survey Form","/portfolio-page/html/fcc_htmlAndCssCert/surveyForm.html"],
+    ["Product Landing Page", "/portfolio-page/html/fcc_htmlAndCssCert/productLandingPage.html"]
 ]
 
 // var pathname = window.location.pathname;
