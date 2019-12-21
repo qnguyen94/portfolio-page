@@ -162,6 +162,12 @@
     background-size: 100% 100%;
     background-position: center center;
   }
+
+  #portfolium {
+    background: url(./portfolio-page/img/logos/portfolium.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+  }
   
   .profile-link p {
     text-align: center;
