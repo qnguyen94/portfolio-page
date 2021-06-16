@@ -1,5 +1,5 @@
 let pageList = [
-    ["Home", "/portfolio-page/index.html"],
+    ["Home", "/index.html"],
     ["Projects Summary", "/html/fcc_JSandAlScriptCert/fcc_js_summary.html"],
     ["Palindrome Checker", "/html/fcc_JSandAlScriptCert/PalindromeChecker.html"],
     ["Roman Number Convert","/html/fcc_JSandAlScriptCert/RomanNumeralConverter.html"],
