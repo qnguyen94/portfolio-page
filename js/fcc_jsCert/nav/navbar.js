@@ -1,11 +1,11 @@
 let pageList = [
     ["Home", "/portfolio-page/index.html"],
-    ["Projects Summary", "/portfolio-page/html/fcc_JSandAlScriptCert/fcc_js_summary.html"],
-    ["Palindrome Checker", "/portfolio-page/html/fcc_JSandAlScriptCert/PalindromeChecker.html"],
-    ["Roman Number Convert","/portfolio-page/html/fcc_JSandAlScriptCert/RomanNumeralConverter.html"],
-    ["Caesar Cipher", "/portfolio-page/html/fcc_JSandAlScriptCert/CaesarsCipher.html"],
-    ["Phone Number Validator", "/portfolio-page/html/fcc_JSandAlScriptCert/TelephoneNumberValidator.html"],
-    ["Cash Register", "/portfolio-page/html/fcc_JSandAlScriptCert/CashRegister.html"]
+    ["Projects Summary", "/html/fcc_JSandAlScriptCert/fcc_js_summary.html"],
+    ["Palindrome Checker", "/html/fcc_JSandAlScriptCert/PalindromeChecker.html"],
+    ["Roman Number Convert","/html/fcc_JSandAlScriptCert/RomanNumeralConverter.html"],
+    ["Caesar Cipher", "/html/fcc_JSandAlScriptCert/CaesarsCipher.html"],
+    ["Phone Number Validator", "/html/fcc_JSandAlScriptCert/TelephoneNumberValidator.html"],
+    ["Cash Register", "/html/fcc_JSandAlScriptCert/CashRegister.html"]
 ]
 
 // var pathname = window.location.pathname;
