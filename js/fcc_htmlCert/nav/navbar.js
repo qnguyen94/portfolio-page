@@ -1,8 +1,8 @@
 let pageList = [
     ["Home", "/index.html"],
-    ["Projects Summary", "/fcc_htmlAndCssCert/fcc_html_summary.html"],
-    ["Tribute Page", "/fcc_htmlAndCssCert/tributePage.html"],
-    ["Survey Form","/fcc_htmlAndCssCert/surveyForm.html"],
+    ["Projects Summary", "/html/fcc_htmlAndCssCert/fcc_html_summary.html"],
+    ["Tribute Page", "/html/fcc_htmlAndCssCert/tributePage.html"],
+    ["Survey Form","/html/fcc_htmlAndCssCert/surveyForm.html"],
     ["Product Landing Page", "/html/fcc_htmlAndCssCert/productLandingPage.html"]
 ]
 
